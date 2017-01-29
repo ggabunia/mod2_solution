@@ -1,0 +1,85 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+h1{
+	text-align: center;
+	font-size: 175%;
+}
+
+.row {
+  width: 100%;
+}
+
+.section {
+	position: relative;
+	background-color: #A8A8A8;
+	margin: 20px;
+	border: 1px solid black;
+	padding: 5px;
+
+
+}
+.section > h2{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 10px;
+	text-align: center;
+	margin-top: 0px;
+	border: 1px solid black;
+	font-size: 125%;
+}
+.section > p{
+	margin: 20px;
+	margin-top: 40px;
+}
+
+#head1{
+	background-color: #28BFCA;
+}
+#head2{
+	background-color: #93EAA3;
+}
+#head3{
+	background-color: #227EAF;
+	color: white;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: 33.33%;
+    float: left;
+  }
+
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+ .col-md-6 {
+    width: 50%;
+     float: left;
+  }
+ .col-md-12 {
+    width: 100%;
+     float: left;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+
+  .col-sm-12 {
+    width: 100%;
+    float: left;
+  }
+}
+
